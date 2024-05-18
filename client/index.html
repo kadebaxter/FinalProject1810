@@ -1,15 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <a href=""></a>
+      <a href="./index.html">
+        <img
+          id="icon"
+          src="./images/pexels-pixabay-159420.jpg"
+          alt="piano keyboard symbol"
+        />
+      </a>
+      <h4 id="headerTitle">Welcome to the Sheet Music Organizer</h4>
     </header>
-    <main></main>
+    <section id="bodyContainer">
+      <nav>
+        <ul>
+          <li><a href="./create.html">Add New Song</a></li>
+          <li><a href="./favorites.html">Choose Favorites</a></li>
+        </ul>
+      </nav>
+      <main>
+        <form>
+          <label for="songName">Enter Song name</label>
+          <input id="songName" type="text" />
+
+          <label for="songLength">Enter Song Length</label>
+          <input id="songLength" type="number" step=".01" />
+
+          <select name="choosePlaylist" id="choosePlaylist">
+            <option value="first">First Playlist</option>
+            <option value="second">Second Playlist</option>
+          </select>
+          <input type="reset" />
+          <input type="submit" />
+        </form>
+        <section>
+          <div class="cardContainer">
+            <div class="card">
+              <figure>
+                <img src="./images/pexels-hermaion-104084.jpg" alt="" />
+                <figcaption>This is an image of an artist.</figcaption>
+              </figure>
+            </div>
+            <div class="card">
+              <figure>
+                <img src="./images/pexels-hermaion-104084.jpg" alt="" />
+                <figcaption>This is an image of an artist.</figcaption>
+              </figure>
+            </div>
+            <div class="card">
+              <figure>
+                <img src="./images/pexels-hermaion-104084.jpg" alt="" />
+                <figcaption>This is an image of an artist.</figcaption>
+              </figure>
+            </div>
+            
+          </div>
+          <aside>
+            This will have to have something describing all the cards or just
+            some sort of text to the side of the other thing.
+          </aside>
+        </section>
+      </main>
+    </section>
     <footer></footer>
-</body>
+  </body>
 </html>

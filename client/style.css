@@ -1,0 +1,140 @@
+/*
+Selectors
+Transitions
+Hover
+nth Child
+layout (flex)
+colors: background, text, accent, stored in variables
+margin and padding
+border and corner radius.*/
+
+:root {
+    --light-blue-color: #535C91;
+    --dark-blue-color: #070F2B;
+    --medium-blue-color: #1B1A55;
+    --light-gray-color: #9290C3;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: var(--dark-blue-color);
+    color: var(--light-gray-color);
+    height: 100vh;
+}
+
+/* Header Style */
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--medium-blue-color);
+    height: 6em;
+}
+
+#icon {
+    width: 10em;
+    height: 6em;
+    margin-right: 2em;
+    border-radius: .5em;
+    transition: all 2s;
+}
+
+#icon:hover {
+    background-color: gray;
+    transform: scale(1.1);
+}
+
+#headerTitle {
+    align-self: center;
+    font-size: 2em;
+}
+
+/* Body Style */
+#bodyContainer {
+    display: flex;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    padding: 1em;
+}
+
+nav {
+    width: 10em;
+    background-color: var(--light-blue-color);
+    padding: 0em;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1em;
+}
+
+li {
+    padding-bottom: .5em;
+    padding-top: .5em;
+    color: aliceblue;
+}
+
+input {
+    border-radius: .5em;
+    padding: .25em;
+    margin: .5em;
+}
+
+#songLength {
+    width: 6em;
+}
+
+select {
+    border-radius: .5em;
+    width: 10em;
+    margin: .5em;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+}
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70em;
+}
+aside {
+    width: 15em;
+}
+img {
+    display: flex;
+    width: 100%;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+.card {
+    border: solid;
+    border-color: var(--medium-blue-color);
+    border-radius: 1em;
+  
+    background-color: var(--light-blue-color);
+  
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    margin: 1em;
+}
