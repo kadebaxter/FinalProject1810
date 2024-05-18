@@ -95,6 +95,7 @@ select {
     border-radius: .5em;
     width: 10em;
     margin: .5em;
+    padding: .25em;
 }
 
 form {

@@ -4,45 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Playlist Page</title>
+    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
     <header>
       <a href="./index.html">
-        <img src="./images/pexels-pixabay-159420.jpg" />
+        <img
+          id="icon"
+          src="./images/pexels-pixabay-159420.jpg"
+          alt="piano keyboard symbol"
+        />
       </a>
-      <a href="./create.html">Add New Song</a>
-      <a href="./favorites.html">Choose Favorites</a>
+      <h4 id="headerTitle">Welcome to the Sheet Music Organizer</h4>
     </header>
-    <main>
-      <form>
-        <label for="songName">Enter Song name</label>
-        <input id="songName" type="text" />
-
-        <label for="songLength">Enter Song Length</label>
-        <input id="songLength" type="number">
-
-        <select name="choosePlaylist" id="choosePlaylist">
-          <option value="first">First</option>
-          <option value="second">Second</option>
-        </select>
-        
-        <input type="reset" />
-        <input type="submit" />
-      </form>
-      <section>
-          <figure>Use in the cards with a figcaption.</figure>
-          <aside></aside>
-      </section>
+    <section id="bodyContainer">
       <nav>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><a href="./create.html">Add New Song</a></li>
+          <li><a href="./favorites.html">Choose Favorites</a></li>
         </ul>
-        This will be some sort of navigation menu.
       </nav>
-      This will have a search ability, with cards with an add button
-    </main>
+      <main>
+        
+      </main>
+    </section>
     <footer></footer>
   </body>
 </html>
