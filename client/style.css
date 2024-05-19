@@ -1,141 +1,142 @@
-/*
-Selectors
-Transitions
-Hover
-nth Child
-layout (flex)
-colors: background, text, accent, stored in variables
-margin and padding
-border and corner radius.*/
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Mukta&family=Roboto&family=Sofia+Sans+Condensed:wght@400;500&display=swap");
 
 :root {
-    --light-blue-color: #535C91;
-    --dark-blue-color: #070F2B;
-    --medium-blue-color: #1B1A55;
-    --light-gray-color: #9290C3;
+  --light-blue-color: #535c91;
+  --dark-blue-color: #070f2b;
+  --medium-blue-color: #1b1a55;
+  --light-gray-color: #9290c3;
+  font-family: "Kanit", sans-serif;
 }
-
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    background-color: var(--dark-blue-color);
-    color: var(--light-gray-color);
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: var(--dark-blue-color);
+  color: var(--light-gray-color);
+  height: 100vh;
 }
 
 /* Header Style */
 header {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--medium-blue-color);
-    height: 6em;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--medium-blue-color);
+  height: 6em;
 }
-
 #icon {
-    width: 10em;
-    height: 6em;
-    margin-right: 2em;
-    border-radius: .5em;
-    transition: all 2s;
+  width: 10em;
+  height: 6em;
+  margin-right: 2em;
+  border-radius: 0.5em;
+  transition: all 2s;
 }
-
 #icon:hover {
-    background-color: gray;
-    transform: scale(1.1);
+  background-color: gray;
+  transform: scale(1.1);
 }
-
 #headerTitle {
-    align-self: center;
-    font-size: 2em;
+  align-self: center;
+  font-size: 2em;
 }
 
 /* Body Style */
 #bodyContainer {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
 }
-
 main {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    align-items: center;
-    padding: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  padding: 1em;
 }
-
 nav {
-    width: 10em;
-    background-color: var(--light-blue-color);
-    padding: 0em;
+  width: 10em;
+  background-color: var(--light-blue-color);
+  padding: 0em;
 }
-
+a {
+  text-decoration: none;
+  color: var(--dark-blue-color);
+  font-weight: bold;
+}
 ul {
-    list-style: none;
-    padding-left: 1em;
+  list-style: none;
+  padding-left: 1em;
 }
-
 li {
-    padding-bottom: .5em;
-    padding-top: .5em;
-    color: aliceblue;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  color: aliceblue;
 }
-
 input {
-    border-radius: .5em;
-    padding: .25em;
-    margin: .5em;
+  border-radius: 0.5em;
+  padding: 0.25em;
+  margin: 0.5em;
 }
-
 #songLength {
-    width: 6em;
+  width: 6em;
 }
-
+#songURL {
+  width: 18em;
+}
 select {
-    border-radius: .5em;
-    width: 10em;
-    margin: .5em;
-    padding: .25em;
+  border-radius: 0.5em;
+  width: 10em;
+  margin: 0.5em;
+  padding: 0.25em;
 }
-
 form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-
 section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-grow: 1;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
 }
-.cardContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 70em;
+#cardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70em;
 }
 aside {
-    width: 15em;
+  width: 15em;
 }
 img {
-    display: flex;
-    width: 100%;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
+  display: flex;
+  width: 100%;
+  border-radius: 0.5em;
+  height: 10em;
 }
 .card {
-    border: solid;
-    border-color: var(--medium-blue-color);
-    border-radius: 1em;
-  
-    background-color: var(--light-blue-color);
-  
-    display: flex;
-    flex-direction: column;
-    width: 20em;
-    margin: 1em;
+  border: solid;
+  border-color: var(--medium-blue-color);
+  border-radius: 1em;
+
+  background-color: var(--light-blue-color);
+
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  height: 20em;
+  margin: 1em;
+}
+.card:nth-child(even) {
+  background-color: var(--light-gray-color);
+}
+h2 {
+  color: var(--medium-blue-color);
+  margin: 0;
+  padding: 1em;
+}
+figcaption {
+  padding: 0.5em;
+  color: black;
 }

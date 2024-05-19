@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Playlist Page</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="ui.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -25,22 +26,26 @@
         </ul>
       </nav>
       <main>
-        <form>
+        <form id="formContainer">
           <label for="songName">Enter Song name</label>
           <input id="songName" type="text" />
+
+          <label for="songURL">Enter Picture URL</label>
+          <input id="songURL" type="text" />
 
           <label for="songLength">Enter Song Length</label>
           <input id="songLength" type="number" step=".01" />
 
           <select name="choosePlaylist" id="choosePlaylist">
+            <option value="first">None</option>
             <option value="first">First Playlist</option>
             <option value="second">Second Playlist</option>
           </select>
           <input type="reset" />
-          <input type="submit" />
+          <input type="submit" value="Add Song"/>
         </form>
         <section>
-          <div class="cardContainer">
+          <div id="cardContainer">
             <div class="card">
               <figure>
                 <img src="./images/pexels-hermaion-104084.jpg" alt="" />
@@ -59,7 +64,6 @@
                 <figcaption>This is an image of an artist.</figcaption>
               </figure>
             </div>
-            
           </div>
           <aside>
             This will have to have something describing all the cards or just
